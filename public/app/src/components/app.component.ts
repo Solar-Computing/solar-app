@@ -1,5 +1,6 @@
-import { Component, AfterViewInit, Input } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Component, AfterViewInit, Input, AfterViewChecked } from '@angular/core';
+import { ROUTER_DIRECTIVES, Router, ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 import { HeroService } from '../services/hero.service';
 import { SessionsService } from '../services/sessions.service';
@@ -20,12 +21,17 @@ export class AppComponent implements AfterViewInit {
   @Input() private contentLoaded: boolean = false;
   title = 'Tour of Heroes';
 
-  constructor(private sessions: SessionsService) { }
+  constructor(
+    private sessions: SessionsService,
+    private location: Location,
+    private route: ActivatedRoute
+  ) { }
 
   logout() {
     this.sessions.logout();
   }
+
   ngAfterViewInit() {
-    this.contentLoaded = true;
+    console.log(this.route.snapshot);
   }
 }

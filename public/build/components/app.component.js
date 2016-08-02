@@ -10,12 +10,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var common_1 = require('@angular/common');
 var hero_service_1 = require('../services/hero.service');
 var sessions_service_1 = require('../services/sessions.service');
 require('../rxjs-extensions');
 var AppComponent = (function () {
-    function AppComponent(sessions) {
+    function AppComponent(sessions, location, route) {
         this.sessions = sessions;
+        this.location = location;
+        this.route = route;
         this.contentLoaded = false;
         this.title = 'Tour of Heroes';
     }
@@ -23,7 +26,7 @@ var AppComponent = (function () {
         this.sessions.logout();
     };
     AppComponent.prototype.ngAfterViewInit = function () {
-        this.contentLoaded = true;
+        console.log(this.route.snapshot);
     };
     __decorate([
         core_1.Input(), 
@@ -40,7 +43,7 @@ var AppComponent = (function () {
                 sessions_service_1.SessionsService
             ]
         }), 
-        __metadata('design:paramtypes', [sessions_service_1.SessionsService])
+        __metadata('design:paramtypes', [sessions_service_1.SessionsService, common_1.Location, router_1.ActivatedRoute])
     ], AppComponent);
     return AppComponent;
 }());
