@@ -92,3 +92,4 @@ authorized_keys
 dump.rdb
 
 typings
+public/app/build
