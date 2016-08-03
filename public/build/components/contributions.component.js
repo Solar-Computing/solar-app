@@ -9,23 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var contributions_component_1 = require('./contributions.component');
-var SolarHomeComponent = (function () {
-    function SolarHomeComponent() {
-        this.showContributions = false;
+var ContributionComponent = (function () {
+    function ContributionComponent() {
     }
-    SolarHomeComponent.prototype.toggleShowContributions = function () {
-        this.showContributions = !this.showContributions;
-    };
-    SolarHomeComponent = __decorate([
+    ContributionComponent = __decorate([
         core_1.Component({
-            selector: 'solar-home',
-            templateUrl: 'app/templates/solar-home.component.html',
-            directives: [contributions_component_1.ContributionComponent]
+            selector: 'contributions',
+            templateUrl: 'app/templates/contributions.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], SolarHomeComponent);
-    return SolarHomeComponent;
+    ], ContributionComponent);
+    return ContributionComponent;
 }());
-exports.SolarHomeComponent = SolarHomeComponent;
-//# sourceMappingURL=solar-home.component.js.map
+exports.ContributionComponent = ContributionComponent;
+//# sourceMappingURL=contributions.component.js.map

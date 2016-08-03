@@ -1,27 +1,4 @@
 <div class="cover">
-  <div class="navbar">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand"><span>Brand</span></a>
-      </div>
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active">
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Contacts</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
   <div class="cover-image" style="background-image : url('app/img/landing-page/header.png')"></div>
   <div class="container">
     <div class="row">
@@ -64,14 +41,15 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <div class="btn-group btn-group-justified btn-group">
-          <a href="#" class="btn btn-primary">Contribute</a>
-          <a href="#" class="btn btn-link">Learn more</a>
-          <a href="#" class="btn btn-primary">Sponsor</a>
+          <a href="#/" class="btn btn-primary" (click)="toggleShowContributions()">Contribute</a>
+          <a href="#/" class="btn btn-link">Learn more</a>
+          <a href="#/" class="btn btn-primary">Sponsor</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+<contributions *ngIf="showContributions"></contributions>
 <div class="section">
   <div class="container">
     <div class="row">

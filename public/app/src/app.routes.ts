@@ -10,7 +10,8 @@ import { HeroFormComponent } from './components/hero-form.component';
 const routes: RouterConfig = [
   {
     path: '',
-    component: HomeComponent
+    pathMatch: 'full',
+    redirectTo: '/solar_home'
   },
   {
     path: 'heroes',
