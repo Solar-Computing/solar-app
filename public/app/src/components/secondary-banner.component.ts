@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
 export class SecondaryBannerComponent {
   @Input() title: string;
   @Input() description: string;
-  text: string = "Lorem ipsum dolor sit amet, consectetur adipisici elit, \nsed eiusmod tempor incidunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud";
+  @Input() text: string = "Lorem ipsum dolor sit amet, consectetur adipisici elit, \nsed eiusmod tempor incidunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud";
 
   show_text: boolean;
 

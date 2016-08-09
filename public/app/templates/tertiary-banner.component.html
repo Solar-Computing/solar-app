@@ -1,24 +1,22 @@
 <div class="container-fluid banner-secondary">
   <div class="row">
     <div class="col-md-12 text-center">
-      <h1>MISSION</h1>
-      <h3>One house. One System. Zero waste.</h3>
+      <h1>{{title}}</h1>
+      <h3>{{description}}</h3>
       <!-- <a class="btn btn-link">Learn more</a> -->
-      <a href="javascript:;" *ngIf="false"><i class="fa fa-2x fa-fw fa-arrow-circle-down icon-pad"></i></a>
+      <a href="javascript:;" *ngIf="!show_text" (click)="toggleShow()"><i class="fa fa-2x fa-fw fa-arrow-circle-down icon-pad"></i></a>
     </div>
   </div>
 </div>
-<div class="section banner-secondary">
+<div class="section banner-secondary" *ngIf="show_text">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-          <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-          <br>Ut enim ad minim veniam, quis nostrud</p>
+        <p>{{text}}</p>
       </div>
     </div>
     <div class="row text-center">
-      <a href="javascript:;"><i class="fa fa-2x fa-fw fa-arrow-circle-up icon-pad"></i></a>
+      <a href="javascript:;" (click)="toggleShow()"><i class="fa fa-2x fa-fw fa-arrow-circle-up icon-pad"></i></a>
     </div>
   </div>
 </div>
