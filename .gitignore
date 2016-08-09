@@ -93,3 +93,4 @@ dump.rdb
 
 typings
 public/app/build
+public/app/styles/css

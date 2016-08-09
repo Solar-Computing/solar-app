@@ -12,6 +12,15 @@ h1 {
 h3 {
   color: #333333;
 }
+p {
+  white-space: pre-wrap;
+  color: #333333;
+}
+.icon-pad {
+  color: #333333;
+  padding-top: 28px;
+  padding-bottom: 1px;
+}
 .btn-link {
   padding-top: 14px;
   padding-bottom: 14px;

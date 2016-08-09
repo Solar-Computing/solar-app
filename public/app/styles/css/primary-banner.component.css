@@ -11,6 +11,11 @@ h1 {
 h3 {
   color: #4582EC;
 }
+.icon-pad {
+  color: #4582EC;
+  padding-top: 28px;
+  padding-bottom: 1px;
+}
 .btn-link {
   padding-top: 14px;
   padding-bottom: 14px;

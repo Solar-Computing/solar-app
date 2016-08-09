@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SecondaryBannerComponent } from './secondary-banner.component';
 import { TertiaryBannerComponent } from './tertiary-banner.component';
 
@@ -9,4 +9,8 @@ import { TertiaryBannerComponent } from './tertiary-banner.component';
   directives: [SecondaryBannerComponent, TertiaryBannerComponent]
 })
 
-export class PrimaryBannerComponent { }
+export class PrimaryBannerComponent {
+  @Input() title: string;
+  @Input() desc_short: string;
+  @Input() image_uri: string;
+}
