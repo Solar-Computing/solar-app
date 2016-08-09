@@ -6,6 +6,7 @@ import { LoginFormComponent } from './components/login-form.component';
 import { HomeComponent } from './components/home.component';
 import { SolarHomeComponent } from './components/solar-home.component';
 import { HeroFormComponent } from './components/hero-form.component';
+import { PrimaryBannerComponent } from './components/primary-banner.component';
 
 const routes: RouterConfig = [
   {
@@ -36,6 +37,10 @@ const routes: RouterConfig = [
   {
     path: 'add_hero',
     component: HeroFormComponent
+  },
+  {
+    path: 'primary_banner',
+    component: PrimaryBannerComponent
   }
 ];
 

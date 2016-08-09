@@ -9,7 +9,7 @@ import '../rxjs-extensions';
 @Component({
   selector: 'my-app',
   templateUrl: 'app/templates/app.component.html',
-  styleUrls: ['app/styles/app.component.css'],
+  styleUrls: ['app/styles/css/app.component.css'],
   directives: [ROUTER_DIRECTIVES],
   providers: [
     HeroService,

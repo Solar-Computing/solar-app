@@ -1,0 +1,30 @@
+@import "variables.less";
+
+.banner-primary {
+  background-color: @brand-primary;
+  padding-bottom: @padding-large-vertical*3;
+  padding-top: @padding-large-vertical*2;
+  padding-left: @padding-large-horizontal;
+  padding-right: @padding-large-horizontal;
+}
+
+h1 {
+  font-size: @font-size-h1*1.5;
+  color: @body-bg;
+}
+
+h3 {
+  color: @text-color;
+}
+
+.btn-link {
+  padding-top: @padding-large-vertical;
+  padding-bottom: @padding-large-vertical;
+  color: @body-bg;
+  &:hover,
+  &:focus {
+    color: @text-color;
+    text-decoration: @link-hover-decoration;
+    background-color: transparent;
+  }
+}

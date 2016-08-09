@@ -23,6 +23,8 @@
     "angular2-locker": "^0.3.1",
     "bootstrap": "^3.3.6",
     "core-js": "^2.4.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
     "ng2-bootstrap": "^1.0.24",
     "ng2-material": "^0.5.0",
     "reflect-metadata": "^0.1.3",

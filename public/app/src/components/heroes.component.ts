@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'my-heroes',
   templateUrl: 'app/templates/heroes.component.html',
-  styleUrls: ['app/styles/heroes.component.css'],
+  styleUrls: ['app/styles/css/heroes.component.css'],
   directives: [HeroDetailComponent]
 })
 
