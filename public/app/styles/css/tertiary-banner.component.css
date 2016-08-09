@@ -1,24 +1,25 @@
-.banner-primary {
-  padding-bottom: 56px;
-  padding-top: 56px;
+.banner-secondary {
+  background-color: #333333;
+  padding-bottom: 28px;
+  padding-top: 28px;
   padding-left: 16px;
   padding-right: 16px;
 }
 h1 {
   font-size: 61.5px;
-  color: #4582EC;
+  color: #eeeeee;
 }
 h3 {
-  color: #4582EC;
+  color: #eeeeee;
 }
 .btn-link {
   padding-top: 14px;
   padding-bottom: 14px;
-  color: #4582EC;
+  color: #eeeeee;
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #134fb8;
+  color: #eeeeee;
   text-decoration: underline;
   background-color: transparent;
 }
