@@ -1,7 +1,7 @@
-.banner-primary {
-  background-color: #4582EC;
-  padding-bottom: 56px;
-  padding-top: 56px;
+.banner-secondary {
+  background-color: #eeeeee;
+  padding-bottom: 28px;
+  padding-top: 28px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -19,7 +19,7 @@ h3 {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #fff;
+  color: #333333;
   text-decoration: underline;
   background-color: transparent;
 }
