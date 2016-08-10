@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'banner-tertiary',
+  selector: 'tertiary-banner',
   templateUrl: 'app/templates/tertiary-banner.component.html',
   styleUrls: ['app/styles/css/tertiary-banner.component.css']
 })

@@ -1,54 +1,22 @@
-import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
-import { SessionsService } from '../services/sessions.service';
-import { Router } from '@angular/router';
-import { Location } from '@angular/common';
+import { Component } from '@angular/core';
 
-import { ProtectedDirective } from '../directives/protected.directive';
-import { HeroService } from '../services/hero.service';
-import { Hero } from '../models/hero';
+import { HomeData } from '../data/home.data';
+import { PrimaryBannerComponent } from './primary-banner.component';
+import { SecondaryBannerComponent } from './secondary-banner.component';
+import { TertiaryBannerComponent } from './tertiary-banner.component';
+
 
 @Component({
   selector: 'home',
   templateUrl: 'app/templates/home.component.html',
-  directives: [ProtectedDirective],
-  providers: [HeroService]
+  providers: [HomeData],
+  directives: [
+    PrimaryBannerComponent,
+    SecondaryBannerComponent,
+    TertiaryBannerComponent
+  ]
 })
 
-export class HomeComponent implements OnInit, OnDestroy, AfterViewInit {
-  private sub: any;
-  heroes: Hero[];
-
-  constructor(
-    private sessions: SessionsService,
-    private router: Router,
-    private location: Location,
-    private heroService: HeroService
-  ) { }
-
-  ngAfterViewInit() {
-    console.log("heroes call");
-    this.heroService.getTopHeroes().then(
-      (heroes: Hero[]) => this.heroes = heroes
-    ).catch(error => console.log("couldn't get heroes", error));
-  }
-
-  ngOnInit() {
-    // console.log("oninit");
-  }
-
-  goToAddHero() {
-    this.router.navigateByUrl('/add_hero');
-  }
-
-  validate() {
-    this.sessions.validateToken();
-  }
-
-  logout() {
-    this.sessions.logout();
-  }
-
-  ngOnDestroy() {
-
-  }
+export class HomeComponent {
+  constructor(private homeData: HomeData) { }
 }

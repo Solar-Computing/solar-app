@@ -1,34 +1,9 @@
-<protected></protected>
-<div class="cover">
-  <div class="cover-image"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>Power</h1>
-        <p>Welcome to the Super Hero app
-          <br>
-        </p>
-        <br>
-        <br><a class="btn btn-lg btn-default" href="#/">View</a> </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="dashboard-heroes">
-  <div class="container">
-    <div class="row">
-      <div *ngFor="let hero of heroes" class="col-md-3"> <img src="{{hero.image_src}}" class="img-responsive">
-        <h2>{{hero.name}}</h2>
-        <p>{{hero.description}}</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4"><a class="btn btn-success">View all heroes</a></div>
-      <div class="col-md-4"><a class="btn btn-default" (click)="goToAddHero()">Add another hero</a></div>
-      <div class="col-md-4"><a class="btn btn-primary">View the solar decathlon @ GT</a></div>
-    </div>
-  </div>
-</div>
+<primary-banner></primary-banner>
+<tertiary-banner [title]="homeData.sprawl.title" [description]="homeData.sprawl.description" [text]="homeData.sprawl.text">
+</tertiary-banner>
+<secondary-banner [title]="homeData.low_water.title" [description]="homeData.low_water.description" [text]="homeData.low_water.text">
+</secondary-banner>
+<tertiary-banner [title]="homeData.high_cost.title" [description]="homeData.high_cost.description" [text]="homeData.high_cost.text">
+</tertiary-banner>
+<secondary-banner [title]="homeData.water_war.title" [description]="homeData.water_war.description" [text]="homeData.water_war.text">
+</secondary-banner>

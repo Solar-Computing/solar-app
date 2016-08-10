@@ -2,7 +2,6 @@ import { Component, AfterViewInit, Input, AfterViewChecked } from '@angular/core
 import { ROUTER_DIRECTIVES, Router, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { HeroService } from '../services/hero.service';
 import { SessionsService } from '../services/sessions.service';
 import '../rxjs-extensions';
 
@@ -12,7 +11,6 @@ import '../rxjs-extensions';
   styleUrls: ['app/styles/css/app.component.css'],
   directives: [ROUTER_DIRECTIVES],
   providers: [
-    HeroService,
     SessionsService
   ]
 })
