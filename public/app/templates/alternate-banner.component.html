@@ -1,25 +1,30 @@
-<div class="container-fluid banner-alternate">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h1>{{title}}</h1>
-      <h3>{{description}}</h3>
-      <a class="btn btn-link" *ngIf="!show_text" (click)="toggleShow()">Learn more</a>
-      <!-- <a href="javascript:;" *ngIf="!show_text" (click)="toggleShow()"><i class="fa fa-2x fa-fw fa-arrow-circle-down icon-pad"></i></a> -->
-    </div>
-  </div>
-</div>
-<div class="section banner-alternate" *ngIf="show_text">
-  <div class="container">
+<div class="banner-alternate">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <p *ngIf="manifesto">
-          <strong>{{manifesto}}</strong>
-        </p>
-        <p class="text-left">{{text}}</p>
+      <div class="col-md-12 text-center">
+        <h1>{{title}}</h1>
+        <h3>{{description}}</h3>
+        <a class="btn btn-link" *ngIf="!show_text" (click)="toggleShow()">Learn more</a>
+        <a class="btn btn-link" *ngIf="show_text" (click)="toggleShow()">Learn less</a>
+        <!-- <a class="btn btn-link" [hidden]="show_text" (click)="toggleShow()">Learn more</a> -->
+        <!-- <a href="javascript:;" *ngIf="!show_text" (click)="toggleShow()"><i class="fa fa-2x fa-fw fa-arrow-circle-down icon-pad"></i></a> -->
       </div>
     </div>
-    <div class="row text-center">
+  </div>
+  <div class="section" *ngIf="show_text">
+    <!-- <div class="section banner-alternate" [hidden]="!show_text"> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <p *ngIf="manifesto">
+            <strong>{{manifesto}}</strong>
+          </p>
+          <p class="text-left">{{text}}</p>
+        </div>
+      </div>
+      <!-- <div class="row text-center">
       <a href="javascript:;" (click)="toggleShow()"><i class="fa fa-2x fa-fw fa-arrow-circle-up icon-pad"></i></a>
+    </div> -->
     </div>
   </div>
 </div>

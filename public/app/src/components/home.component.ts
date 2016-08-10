@@ -11,6 +11,7 @@ import { ImageBannerComponent } from './image-banner.component';
 @Component({
   selector: 'home',
   templateUrl: 'app/templates/home.component.html',
+  styleUrls: ['app/styles/css/home.component.css'],
   providers: [HomeData],
   directives: [
     PrimaryBannerComponent,
