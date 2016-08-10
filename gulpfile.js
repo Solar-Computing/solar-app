@@ -15,3 +15,5 @@ gulp.task('watch-less', function() {
 });
 
 gulp.task('default', ['compile-less', 'watch-less']);
+
+gulp.task('prep-prod', ['compile-less']);

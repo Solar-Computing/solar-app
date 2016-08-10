@@ -5,7 +5,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
-    "postinstall": "typings install && tsc"
+    "postinstall": "typings install && tsc && gulp prep-prod"
   },
   "license": "ISC",
   "dependencies": {
