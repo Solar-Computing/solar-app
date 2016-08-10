@@ -1,10 +1,11 @@
-import {Banner} from '../models/banner';
+import { Banner } from '../models/banner';
 
 export class HomeData {
   sprawl: Banner = new Banner();
   low_water: Banner = new Banner();
   high_cost: Banner = new Banner();
   water_war: Banner = new Banner();
+  soln: any = {};
 
   constructor() {
     this.sprawl.title = 'Sprawling Metropolis';
@@ -52,5 +53,13 @@ This struggle continued through the 1990s with futile negotiations and state lea
 The 2000s were filled with federal court trials and rulings to shut-down Atlanta’s draw from Lake Lanier without a viable plan to reprimand the region for uncontrolled growth over the past 30 years. This forced the Atlanta metro area to seek water conservation strategies as opposed to fighting for more water. This ideology has bought more time in this ongoing conflict.
 
 In 2015, the Army Corps of Engineers released a Master Water Control Manual and Environmental Impact Statement for the ACF River basin to outline how it plans to supply water to metro Atlanta from Lake Lanier with a final version due in 2017.`;
+
+    this.soln.title = "Resurgens";
+    this.soln.description = "A part of the solution to Atlanta's problems."
+    this.soln.manifesto = `
+The Solar Decathlon Team at Georgia Tech aims to create a house that achieves net-zero energy and near net-zero water status while also addressing the local community concerns and promoting a green conscious.`;
+    this.soln.text = `
+Being part of the watershed and a consumer of water resources, the Solar Decathlon Team at Georgia Tech aims to be part of the solution in metro Atlanta water challenges by providing an idea for housing that utilizes methods to reduce water consumption, increase water quality and reduce energy consumption as well as increase awareness of environmental & community issues. We seek to champion the idea of sustainable living in energy, water and waste to produce a resilient and environmentally neutral home. This new sustainable home model will have the techniques and strategies to apply in other homes, commercial buildings and institutions throughout metropolitan Atlanta, Georgia and abroad.`;
+
   }
 }

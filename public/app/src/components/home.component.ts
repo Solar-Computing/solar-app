@@ -4,6 +4,7 @@ import { HomeData } from '../data/home.data';
 import { PrimaryBannerComponent } from './primary-banner.component';
 import { SecondaryBannerComponent } from './secondary-banner.component';
 import { TertiaryBannerComponent } from './tertiary-banner.component';
+import { AlternateBannerComponent } from './alternate-banner.component';
 
 
 @Component({
@@ -13,7 +14,8 @@ import { TertiaryBannerComponent } from './tertiary-banner.component';
   directives: [
     PrimaryBannerComponent,
     SecondaryBannerComponent,
-    TertiaryBannerComponent
+    TertiaryBannerComponent,
+    AlternateBannerComponent
   ]
 })
 
