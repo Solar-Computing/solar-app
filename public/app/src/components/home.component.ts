@@ -5,6 +5,7 @@ import { PrimaryBannerComponent } from './primary-banner.component';
 import { SecondaryBannerComponent } from './secondary-banner.component';
 import { TertiaryBannerComponent } from './tertiary-banner.component';
 import { AlternateBannerComponent } from './alternate-banner.component';
+import { ImageBannerComponent } from './image-banner.component';
 
 
 @Component({
@@ -15,7 +16,8 @@ import { AlternateBannerComponent } from './alternate-banner.component';
     PrimaryBannerComponent,
     SecondaryBannerComponent,
     TertiaryBannerComponent,
-    AlternateBannerComponent
+    AlternateBannerComponent,
+    ImageBannerComponent
   ]
 })
 
