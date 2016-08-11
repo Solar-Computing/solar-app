@@ -7,7 +7,7 @@ const routes: RouterConfig = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: '/solar_home'
+    redirectTo: '/home'
   },
   {
     path: 'sign_in',
