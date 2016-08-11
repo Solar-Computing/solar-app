@@ -8,6 +8,8 @@ export class HomeData {
   soln: any = {};
   pv_system: Banner = new Banner();
   water_system: Banner = new Banner();
+  efficient: Banner = new Banner();
+  iot_system: Banner = new Banner();
 
   constructor() {
     this.sprawl.title = 'Sprawling Metropolis';
@@ -63,8 +65,8 @@ The Solar Decathlon Team at Georgia Tech aims to create a house that achieves ne
     this.soln.text = `
 Being part of the watershed and a consumer of water resources, the Solar Decathlon Team at Georgia Tech aims to be part of the solution in metro Atlanta water challenges by providing an idea for housing that utilizes methods to reduce water consumption, increase water quality and reduce energy consumption as well as increase awareness of environmental & community issues. We seek to champion the idea of sustainable living in energy, water and waste to produce a resilient and environmentally neutral home. This new sustainable home model will have the techniques and strategies to apply in other homes, commercial buildings and institutions throughout metropolitan Atlanta, Georgia and abroad.`;
 
-    this.pv_system.title = "PV System"
-    this.pv_system.description = "Harvesting solar power to create a net-zero energy house."
+    this.pv_system.title = "Net-Zero Energy"
+    this.pv_system.description = "Harvesting solar power to create an overall net-zero system."
     this.pv_system.text = `
 The Tri-state water wars officially began when the Alabama & Florida filed a suits with the Army Corps of Engineers in 1990 for equal water apportionment from the ACF (Alabama, Coosa, Tallapoosa) & ACT (Apalachicola, Chattahoochee, Flint) river basins.
 
@@ -76,9 +78,36 @@ The 2000s were filled with federal court trials and rulings to shut-down Atlanta
 
 In 2015, the Army Corps of Engineers released a Master Water Control Manual and Environmental Impact Statement for the ACF River basin to outline how it plans to supply water to metro Atlanta from Lake Lanier with a final version due in 2017.`;
 
-    this.water_system.title = "Water System"
-    this.water_system.description = "Building a system to support near net-zero water house."
+    this.water_system.title = "Net-Zero Water"
+    this.water_system.description = "Using various technologies to make a near net-zero water system."
     this.water_system.text = `
+The Tri-state water wars officially began when the Alabama & Florida filed a suits with the Army Corps of Engineers in 1990 for equal water apportionment from the ACF (Alabama, Coosa, Tallapoosa) & ACT (Apalachicola, Chattahoochee, Flint) river basins.
+
+In the late 1980s, two of region’s biggest users of the river, a nuclear power plant & a paper mill, both suffered from poor flow on the river in Alabama. The sediment quality and water flow needed for Apalachicola Bay oysters to thrive was also beginning to fail to keep this $80 million dollar industry afloat during the same time. The thirsty Atlanta metro area with its combined sewer and storm water system significantly reduced its flow and was contaminated with toxins & bacteria.
+
+This struggle continued through the 1990s with futile negotiations and state leaders threatening military action for access to water resources. A regional drought worsened relations and threatened water rationing.
+
+The 2000s were filled with federal court trials and rulings to shut-down Atlanta’s draw from Lake Lanier without a viable plan to reprimand the region for uncontrolled growth over the past 30 years. This forced the Atlanta metro area to seek water conservation strategies as opposed to fighting for more water. This ideology has bought more time in this ongoing conflict.
+
+In 2015, the Army Corps of Engineers released a Master Water Control Manual and Environmental Impact Statement for the ACF River basin to outline how it plans to supply water to metro Atlanta from Lake Lanier with a final version due in 2017.`;
+
+    this.efficient.title = "Highly Efficient"
+    this.efficient.description = "Maximising energy production and minimising energy consumption."
+    this.efficient.text = `
+The Tri-state water wars officially began when the Alabama & Florida filed a suits with the Army Corps of Engineers in 1990 for equal water apportionment from the ACF (Alabama, Coosa, Tallapoosa) & ACT (Apalachicola, Chattahoochee, Flint) river basins.
+
+In the late 1980s, two of region’s biggest users of the river, a nuclear power plant & a paper mill, both suffered from poor flow on the river in Alabama. The sediment quality and water flow needed for Apalachicola Bay oysters to thrive was also beginning to fail to keep this $80 million dollar industry afloat during the same time. The thirsty Atlanta metro area with its combined sewer and storm water system significantly reduced its flow and was contaminated with toxins & bacteria.
+
+This struggle continued through the 1990s with futile negotiations and state leaders threatening military action for access to water resources. A regional drought worsened relations and threatened water rationing.
+
+The 2000s were filled with federal court trials and rulings to shut-down Atlanta’s draw from Lake Lanier without a viable plan to reprimand the region for uncontrolled growth over the past 30 years. This forced the Atlanta metro area to seek water conservation strategies as opposed to fighting for more water. This ideology has bought more time in this ongoing conflict.
+
+In 2015, the Army Corps of Engineers released a Master Water Control Manual and Environmental Impact Statement for the ACF River basin to outline how it plans to supply water to metro Atlanta from Lake Lanier with a final version due in 2017.`;
+
+
+    this.iot_system.title = "Active Feedback"
+    this.iot_system.description = "Promoting sustainable lifestyle by providing active feedback to the resident."
+    this.iot_system.text = `
 The Tri-state water wars officially began when the Alabama & Florida filed a suits with the Army Corps of Engineers in 1990 for equal water apportionment from the ACF (Alabama, Coosa, Tallapoosa) & ACT (Apalachicola, Chattahoochee, Flint) river basins.
 
 In the late 1980s, two of region’s biggest users of the river, a nuclear power plant & a paper mill, both suffered from poor flow on the river in Alabama. The sediment quality and water flow needed for Apalachicola Bay oysters to thrive was also beginning to fail to keep this $80 million dollar industry afloat during the same time. The thirsty Atlanta metro area with its combined sewer and storm water system significantly reduced its flow and was contaminated with toxins & bacteria.
