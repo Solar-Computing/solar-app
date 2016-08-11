@@ -1,4 +1,4 @@
-<div class="navbar navbar-default navbar-static-top">
+<div class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -7,54 +7,55 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="#/" class="navbar-brand"><span>Resurgens</span></a>
+      <a routerLink="/home" class="navbar-brand"><span>Resurgens</span></a>
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="#/">Team</a>
+        <li [routerLinkActive]="['active']">
+          <a routerLink="/team">Team</a>
         </li>
-        <li>
-          <a href="#/">Sponsors</a>
+        <li [routerLinkActive]="['active']">
+          <a routerLink="/sponsors">Sponsors</a>
         </li>
-        <li>
-          <a href="#/">Support</a>
+        <li [routerLinkActive]="['active']">
+          <a routerLink="/support">Support</a>
         </li>
-        <li>
-          <a href="#/">Connect</a>
+        <li [routerLinkActive]="['active']">
+          <a routerLink="/connect">Connect</a>
         </li>
       </ul>
     </div>
   </div>
-  <router-outlet></router-outlet>
-  <footer class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <h1>Follow us!</h1>
-          <p>We are glad to keep you updated on what we have been doing!</p>
-        </div>
-        <div class="col-sm-6">
-          <p class="text-info text-right">
-            <br>
-            <br>
-          </p>
-          <!-- <div class="row">
+</div>
+<router-outlet></router-outlet>
+<footer class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1>Follow us!</h1>
+        <p>We are glad to keep you updated on what we have been doing!</p>
+      </div>
+      <div class="col-sm-6">
+        <p class="text-info text-right">
+          <br>
+          <br>
+        </p>
+        <!-- <div class="row">
             <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
               <a href="https://www.instagram.com/gtsd2017/"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
               <a href="https://twitter.com/GTSolarHome"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
               <a href="https://www.facebook.com/gtsd2017/"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
             </div>
           </div> -->
-          <div class="row">
-            <div class="col-md-12 text-right">
-              <a target="_blank" href="https://www.instagram.com/gtsd2017/"><i class="fa fa-3x fa-fw fa-medium"></i></a>
-              <a target="_blank" href="https://www.instagram.com/gtsd2017/"><i class="fa fa-3x fa-fw fa-instagram"></i></a>
-              <a target="_blank" href="https://twitter.com/GTSolarHome"><i class="fa fa-3x fa-fw fa-twitter"></i></a>
-              <a target="_blank" href="https://www.facebook.com/gtsd2017/"><i class="fa fa-3x fa-fw fa-facebook"></i></a>
-            </div>
+        <div class="row">
+          <div class="col-md-12 text-right">
+            <a target="_blank" href="https://www.instagram.com/gtsd2017/"><i class="fa fa-3x fa-fw fa-medium"></i></a>
+            <a target="_blank" href="https://www.instagram.com/gtsd2017/"><i class="fa fa-3x fa-fw fa-instagram"></i></a>
+            <a target="_blank" href="https://twitter.com/GTSolarHome"><i class="fa fa-3x fa-fw fa-twitter"></i></a>
+            <a target="_blank" href="https://www.facebook.com/gtsd2017/"><i class="fa fa-3x fa-fw fa-facebook"></i></a>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>

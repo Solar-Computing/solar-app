@@ -2,6 +2,7 @@ import { provideRouter, RouterConfig } from '@angular/router';
 import { LoginFormComponent } from './components/login-form.component';
 import { SolarHomeComponent } from './components/solar-home.component';
 import { HomeComponent } from './components/home.component';
+import { SponsorsComponent } from './components/sponsors.component';
 
 const routes: RouterConfig = [
   {
@@ -20,6 +21,10 @@ const routes: RouterConfig = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'sponsors',
+    component: SponsorsComponent
   }
 ];
 

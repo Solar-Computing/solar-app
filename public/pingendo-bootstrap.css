@@ -6,6 +6,9 @@
  * Licensed under MIT
  * Based on Bootstrap v3.3.4
 */
+body {
+  padding-top: 65px;
+}
 /* Add custom CSS classes here
  *
  * img {
