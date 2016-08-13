@@ -1,18 +1,27 @@
 @import "variables";
 
 @banner-height: 400px;
+@inner-padding: @banner-height/2;
 
 .splash {
   background-image: url("app/img/splash/header.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: @banner-height;
-  line-height: @banner-height;
+  min-height: @banner-height;
 }
 
+.inner-box {
+  // padding: @inner-padding;
+  margin-top: @inner-padding;
+  margin-bottom: @inner-padding;
+  text-align: center;
+  vertical-align: center;
+}
+
+
 h1 {
-  vertical-align: middle;
+  font-size: @font-size-h1*1.2;
 }
 
 .vertical-center {
