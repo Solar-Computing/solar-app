@@ -5,3 +5,16 @@
     </div>
   </div>
 </div>
+<div class="section">
+  <div class="container text-center">
+    <div *ngFor="let sponsor of sponsorsData.sponsors; let i = index">
+      <!-- <div [ngClass]="{'row': i%4==0}"> -->
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="square vcenter" [ngStyle]="{'background-image': 'url(' + sponsor.image + ')'}" (click)="openLink(sponsor.url)">
+          <!-- {{i}} -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -27,3 +27,39 @@ h1 {
 .vertical-center {
   vertical-align: middle;
 }
+
+.square {
+  width: 100%;
+  padding-bottom: 100%;
+  // background-color: @progress-bar-bg;
+  // background-image: url("app/img/sponsors/coca-cola.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  // border: 2px;
+  // margin-left: 5px !important;
+  // margin-right: 5px !important;
+  &:hover, &:focus {
+    // border-color: @brand-danger;
+    // background-color: @brand-danger;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    cursor: pointer;
+    // border: 2px;
+  }
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.no-padding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
