@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 
 export class PrimaryBannerComponent {
   @Input() title: string;
-  @Input() desc_short: string;
-  @Input() image_uri: string;
+  @Input() description: string;
+  @Input() imageUrl: string;
+  @Input() text: string;
 }

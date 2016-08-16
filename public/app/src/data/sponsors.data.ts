@@ -17,10 +17,10 @@ export class SponsorsData {
       image: 'app/img/sponsors/ge.png',
       url: 'http://www.ge.com/'
     },
-    {
-      image: 'app/img/sponsors/georgia-power.png',
-      url: 'http://www.georgiapower.com/'
-    },
+    // {
+    //   image: 'app/img/sponsors/georgia-power.png',
+    //   url: 'http://www.georgiapower.com/'
+    // },
     {
       image: 'app/img/sponsors/hannah-solar.jpg',
       url: 'http://www.hannahsolar.com/'
@@ -29,13 +29,17 @@ export class SponsorsData {
       image: 'app/img/sponsors/homer.png',
       url: 'http://www.homerenergy.com/'
     },
-    {
-      image: 'app/img/sponsors/lg.png',
-      url: 'http://www.lg.com/'
-    },
+    // {
+    //   image: 'app/img/sponsors/lg.png',
+    //   url: 'http://www.lg.com/'
+    // },
     {
       image: 'app/img/sponsors/suniva.jpg',
       url: 'http://www.suniva.com/'
+    },
+    {
+      image: 'app/img/sponsors/schneider-electric.png',
+      url: 'http://www.schneider-electric.com/ww/en/'
     }
   ];
 }

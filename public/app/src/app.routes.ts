@@ -4,6 +4,7 @@ import { SolarHomeComponent } from './components/solar-home.component';
 import { HomeComponent } from './components/home.component';
 import { SponsorsComponent } from './components/sponsors.component';
 import { SupportComponent } from './components/support.component';
+import { PressComponent } from './components/press.component';
 
 const routes: RouterConfig = [
   {
@@ -30,6 +31,10 @@ const routes: RouterConfig = [
   {
     path: 'support',
     component: SupportComponent
+  },
+  {
+    path: 'press',
+    component: PressComponent
   }
 ];
 

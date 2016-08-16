@@ -1,6 +1,7 @@
 import { Banner } from '../models/banner';
 
 export class HomeData {
+  main: any = {};
   sprawl: Banner = new Banner();
   low_water: Banner = new Banner();
   high_cost: Banner = new Banner();
@@ -12,6 +13,10 @@ export class HomeData {
   iot_system: Banner = new Banner();
 
   constructor() {
+    this.main.title = 'Resurgens';
+    this.main.description = 'One house. One system. Zero waste.';
+    this.main.logoUrl = "app/img/logo/resurgens-main.png";
+
     this.sprawl.title = 'Sprawling Metropolis';
     this.sprawl.description = 'Atlanta is home to 6,000,000 people. 2,000,000 more are expected by 2040.';
     this.sprawl.text = `
@@ -59,7 +64,7 @@ The 2000s were filled with federal court trials and rulings to shut-down Atlanta
 In 2015, the Army Corps of Engineers released a Master Water Control Manual and Environmental Impact Statement for the ACF River basin to outline how it plans to supply water to metro Atlanta from Lake Lanier with a final version due in 2017.`;
 
     this.soln.title = "Resurgens";
-    this.soln.description = "A part of the solution to Atlanta's problems."
+    this.soln.description = "A part of the solution to Atlanta's problems.";
     this.soln.manifesto = `
 The Solar Decathlon Team at Georgia Tech aims to create a house that achieves net-zero energy and near net-zero water status while also addressing the local community concerns and promoting a green conscious.`;
     this.soln.text = `
