@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import { SponsorsData } from '../data/sponsors.data';
 
@@ -8,7 +9,8 @@ declare var window: Window;
   selector: 'sponsor',
   styleUrls: ['app/styles/css/sponsors.component.css'],
   templateUrl: 'app/templates/sponsors.component.html',
-  providers: [SponsorsData]
+  providers: [SponsorsData],
+  directives: [ROUTER_DIRECTIVES]
 })
 
 export class SponsorsComponent {

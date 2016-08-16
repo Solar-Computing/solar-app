@@ -3,6 +3,7 @@ import { LoginFormComponent } from './components/login-form.component';
 import { SolarHomeComponent } from './components/solar-home.component';
 import { HomeComponent } from './components/home.component';
 import { SponsorsComponent } from './components/sponsors.component';
+import { SupportComponent } from './components/support.component';
 
 const routes: RouterConfig = [
   {
@@ -25,6 +26,10 @@ const routes: RouterConfig = [
   {
     path: 'sponsors',
     component: SponsorsComponent
+  },
+  {
+    path: 'support',
+    component: SupportComponent
   }
 ];
 
