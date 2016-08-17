@@ -13,6 +13,6 @@ import { AlternateBannerComponent } from './alternate-banner.component';
 })
 
 export class PressComponent {
-  private title = "Press Releases";
+  private title = "Press";
   private description = "Read more about the wonderful people who support us in our journey."
 }
