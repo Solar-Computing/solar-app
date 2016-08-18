@@ -3,8 +3,15 @@
 <div class="section">
   <div class="container">
     <div class="row">
-      <div class="col-md-10 col-md-offset-1">
+      <div class="col-md-8 col-md-offset-2">
         <ul class="media-list">
+          <li class="media" *ngFor="let release of releases" (click)="goToPressRelease(release.id)">
+            <a class="pull-left" href="#"><img class="img-rounded media-object" src="{{release.thumbnail}}"></a>
+            <div class="media-body">
+              <h4 class="media-heading">{{release.title}}</h4>
+              <p>{{release.description}}</p>
+            </div>
+          </li>
           <li class="media">
             <a class="pull-left" href="#"><img class="media-object" src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" height="64" width="64"></a>
             <div class="media-body">

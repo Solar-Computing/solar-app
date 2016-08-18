@@ -1,7 +1,14 @@
 @import "variables";
 
 .media {
-  padding: 10px;
+  padding: 10px !important;
+
+  .media-object {
+    margin-right: 10px;
+    height      : 64px;
+    width       : 96px;
+    overflow    : hidden;
+  }
 
   &:hover {
     background-color: @gray-lighter;
