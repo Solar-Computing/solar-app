@@ -7,14 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 
 export class ImageBannerComponent {
-  // @Input() title: string;
-  // @Input() description: string;
-  // @Input() manifesto: string;
-  // @Input() text: string = "Lorem ipsum dolor sit amet, consectetur adipisici elit, \nsed eiusmod tempor incidunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud";
-
-  // show_text: boolean;
-
-  // toggleShow() {
-  // this.show_text = !this.show_text;
-  // }
+  @Input() title: string;
+  @Input() description: string;
+  @Input() imageUrl: string;
+  @Input() button = false;
+  @Input() tint: boolean = true;
 }

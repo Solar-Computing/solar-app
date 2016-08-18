@@ -1,25 +1,22 @@
-<div class="container-fluid banner-image">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <!-- <h1>{{title}}</h1> -->
-      <!-- <h3>{{description}}</h3> -->
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <!-- <a class="btn btn-link" *ngIf="!show_text" (click)="toggleShow()">Learn more</a> -->
-      <!-- <a href="javascript:;" *ngIf="!show_text" (click)="toggleShow()"><i class="fa fa-2x fa-fw fa-arrow-circle-down icon-pad"></i></a> -->
+<div class="container-fluid splash" [ngStyle]="{ 'background-image': 'linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(' + imageUrl + ')'} " *ngIf="!!tint">
+  <div class="row ">
+    <div class="col-md-8 col-md-offset-2 ">
+      <div class="inner-box ">
+        <h1 *ngIf="title">{{title}}</h1>
+        <h3 *ngIf="description">{{description}}</h3>
+        <a *ngIf="button" class="btn btn-primary " routerLink="/support ">Sponsor us</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid splash " [ngStyle]="{ 'background-image': 'url(' + imageUrl + ')'} " *ngIf="!tint ">
+  <div class="row ">
+    <div class="col-md-8 col-md-offset-2 ">
+      <div class="inner-box ">
+        <h1 *ngIf="title">{{title}}</h1>
+        <h3 *ngIf="description">{{description}}</h3>
+        <a *ngIf="button" class="btn btn-primary " routerLink="/support ">Sponsor us</a>
+      </div>
     </div>
   </div>
 </div>

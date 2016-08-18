@@ -6,6 +6,7 @@ import { AlternateBannerComponent } from './alternate-banner.component';
 @Component({
   selector: 'press',
   templateUrl: 'app/templates/press.component.html',
+  styleUrls: ['app/styles/css/press.component.css'],
   directives: [
     PrimaryBannerComponent,
     AlternateBannerComponent
