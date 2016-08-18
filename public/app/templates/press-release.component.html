@@ -1,0 +1,22 @@
+<div *ngIf="release">
+  <div [ngStyle]="{'background-image': 'linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(' + release.imageUrl + ')'}" class="container-fluid splash">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="inner-box">
+          <h1 class="title">{{release.title}}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <p>
+            {{release.text}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

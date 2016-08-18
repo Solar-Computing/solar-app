@@ -1,13 +1,10 @@
 @import "variables.less";
 
 .banner-tertiary {
-  background-color: @gray-dark;
-  background-image: url("app/img/patterns/dark-brick-wall.png");
+  background-color : @gray-dark;
+  background-image : url("app/img/patterns/dark-brick-wall.png");
   background-repeat: repeat;
-  padding-bottom: @padding-large-vertical*4;
-  padding-top: @padding-large-vertical*4;
-  padding-left: @padding-large-horizontal;
-  padding-right: @padding-large-horizontal;
+  padding          : @padding-large-vertical*4 @padding-large-horizontal;
 }
 
 h1 {
@@ -15,29 +12,31 @@ h1 {
   color: @gray-lighter;
 }
 
-h3, h4 {
+h3,
+h4 {
   color: @gray-lighter;
 }
 
 p {
   white-space: pre-wrap;
-  color: @gray-lighter;
+  color      : @gray-lighter;
 }
 
 .icon-pad {
-  color: @gray-lighter;
-  padding-top: @padding-large-vertical*2;
+  color         : @gray-lighter;
+  padding-top   : @padding-large-vertical*2;
   padding-bottom: @padding-xs-vertical;
 }
 
 .btn-link {
-  padding-top: @padding-large-vertical;
+  padding-top   : @padding-large-vertical;
   padding-bottom: @padding-large-vertical;
-  color: @gray-lighter;
-  &:hover,
-  &:focus {
-    color: @gray-lighter;
-    text-decoration: @link-hover-decoration;
+  color         : @gray-lighter;
+
+  &:focus,
+  &:hover {
+    color           : @gray-lighter;
+    text-decoration : @link-hover-decoration;
     background-color: transparent;
   }
 }

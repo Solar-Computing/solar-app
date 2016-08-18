@@ -1,18 +1,15 @@
 @import "variables.less";
 
 .banner-alternate {
-  background-color: @brand-primary;
+  background-color : @brand-primary;
   // background-color: @badge-color;
   // background-image: url("app/img/landing-page/rendering.jpg");
   // background-size: cover;
   // background-repeat:   no-repeat;
   // background-position: center center;
-  background-image: url("app/img/patterns/transparent-square-tiles.png");
+  background-image : url("app/img/patterns/transparent-square-tiles.png");
   background-repeat: repeat;
-  padding-bottom: @padding-large-vertical*4;
-  padding-top: @padding-large-vertical*4;
-  padding-left: @padding-large-horizontal;
-  padding-right: @padding-large-horizontal;
+  padding          : @padding-large-vertical*6 @padding-large-horizontal;
 }
 
 h1 {
@@ -28,32 +25,33 @@ h3 {
 
 p {
   white-space: pre-wrap;
-  color: @body-bg;
+  color      : @body-bg;
   // color: @brand-primary;
 }
 
-h4, h5 {
+h4,
+h5 {
   color: @body-bg;
   // color: @brand-primary;
 }
 
 .icon-pad {
-  color: @body-bg;
+  color         : @body-bg;
   // color: @brand-primary;
-  padding-top: @padding-large-vertical*2;
+  padding-top   : @padding-large-vertical*2;
   padding-bottom: @padding-xs-vertical;
 }
 
 .btn-link {
-  padding-top: @padding-large-vertical;
+  padding-top   : @padding-large-vertical;
   padding-bottom: @padding-large-vertical;
-  color: @body-bg;
+  color         : @body-bg;
   // color: @brand-primary;
-  &:hover,
-  &:focus {
-    color: @body-bg;
+  &:focus,
+  &:hover {
+    color           : @body-bg;
     // color: @brand-primary;
-    text-decoration: @link-hover-decoration;
+    text-decoration : @link-hover-decoration;
     background-color: transparent;
   }
 }

@@ -1,13 +1,10 @@
 @import "variables.less";
 
 .banner-secondary {
-  background-image: url("app/img/patterns/concrete-wall.png");
+  background-image : url("app/img/patterns/concrete-wall.png");
   background-repeat: repeat;
-  background-color: @gray-lighter;
-  padding-bottom: @padding-large-vertical*4;
-  padding-top: @padding-large-vertical*4;
-  padding-left: @padding-large-horizontal;
-  padding-right: @padding-large-horizontal;
+  background-color : @gray-lighter;
+  padding          : @padding-large-vertical*4 @padding-large-horizontal;
 }
 
 h1 {
@@ -15,29 +12,31 @@ h1 {
   color: @gray-dark;
 }
 
-h3, h4 {
+h3,
+h4 {
   color: @gray-dark;
 }
 
 p {
   white-space: pre-wrap;
-  color: @gray-dark;
+  color      : @gray-dark;
 }
 
 .icon-pad {
-  color: @gray-dark;
-  padding-top: @padding-large-vertical*2;
+  color         : @gray-dark;
+  padding-top   : @padding-large-vertical*2;
   padding-bottom: @padding-xs-vertical;
 }
 
 .btn-link {
-  padding-top: @padding-large-vertical;
+  padding-top   : @padding-large-vertical;
   padding-bottom: @padding-large-vertical;
-  color: @text-color;
-  &:hover,
-  &:focus {
-    color: @text-color;
-    text-decoration: @link-hover-decoration;
+  color         : @text-color;
+
+  &:focus,
+  &:hover {
+    color           : @text-color;
+    text-decoration : @link-hover-decoration;
     background-color: transparent;
   }
 }

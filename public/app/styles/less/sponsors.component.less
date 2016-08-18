@@ -1,27 +1,26 @@
 @import "variables";
-
 @banner-height: 150px;
-@inner-padding: @padding-large-vertical*4;
+@inner-padding: @padding-large-vertical*6;
 
 .splash {
-  background-image: url("app/img/splash/header.png");
-  background-repeat: no-repeat;
+  background-image   : linear-gradient( @tint, @tint ), url("app/img/splash/header.png");
+  background-repeat  : no-repeat;
   background-position: center center;
-  background-size: cover;
-  min-height: @banner-height;
+  background-size    : cover;
+  min-height         : @banner-height;
 }
 
 .inner-box {
   // padding: @inner-padding;
-  padding-top: @inner-padding;
+  padding-top   : @inner-padding;
   padding-bottom: @inner-padding;
-  text-align: center;
+  text-align    : center;
   vertical-align: center;
 }
 
-
 h1 {
   // font-size: @font-size-h1*1.2;
+  color: @body-bg;
 }
 
 .vertical-center {
@@ -29,21 +28,22 @@ h1 {
 }
 
 .square {
-  width: 100%;
-  padding-bottom: 100%;
+  width              : 100%;
+  padding-bottom     : 100%;
   // background-color: @progress-bar-bg;
   // background-image: url("app/img/sponsors/coca-cola.png");
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  background-repeat  : no-repeat;
+  background-size    : contain;
+  margin-top         : 15px;
+  margin-bottom      : 15px;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   // border: 2px;
   // margin-left: 5px !important;
   // margin-right: 5px !important;
-  &:hover, &:focus {
+  &:focus,
+  &:hover {
     // border-color: @brand-danger;
     // background-color: @brand-danger;
     filter: grayscale(0%);
@@ -54,12 +54,12 @@ h1 {
 }
 
 .vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+  display       : inline-block;
+  vertical-align: middle;
+  float         : none;
 }
 
 .no-padding {
-  margin: 0 !important;
+  margin : 0 !important;
   padding: 0 !important;
 }

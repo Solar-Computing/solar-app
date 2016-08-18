@@ -2,12 +2,9 @@
 
 .banner-primary {
   // background-color: @brand-primary;
-  background-image: url("app/img/patterns/transparent-square-tiles.png");
+  background-image : url("app/img/patterns/transparent-square-tiles.png");
   background-repeat: repeat;
-  padding-bottom: @padding-large-vertical*4;
-  padding-top: @padding-large-vertical*4;
-  padding-left: @padding-large-horizontal;
-  padding-right: @padding-large-horizontal;
+  padding          : @padding-large-vertical*6 @padding-large-horizontal;
 }
 
 h1 {
@@ -15,24 +12,26 @@ h1 {
   color: @brand-primary;
 }
 
-h3, h4 {
+h3,
+h4 {
   color: @brand-primary;
 }
 
 .icon-pad {
-  color: @brand-primary;
-  padding-top: @padding-large-vertical*2;
+  color         : @brand-primary;
+  padding-top   : @padding-large-vertical*2;
   padding-bottom: @padding-xs-vertical;
 }
 
 .btn-link {
-  padding-top: @padding-large-vertical;
+  padding-top   : @padding-large-vertical;
   padding-bottom: @padding-large-vertical;
-  color: @brand-primary;
-  &:hover,
-  &:focus {
-    color: @link-hover-color;
-    text-decoration: @link-hover-decoration;
+  color         : @brand-primary;
+
+  &:focus,
+  &:hover {
+    color           : @link-hover-color;
+    text-decoration : @link-hover-decoration;
     background-color: transparent;
   }
 }
