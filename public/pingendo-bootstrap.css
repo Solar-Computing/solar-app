@@ -12,6 +12,11 @@ body {
   padding-top: 65px;
 }
 
+div, .animate {
+  -webkit-transition: all 0.3s !important;
+  transition: all 0.3s !important;
+}
+
 
 /* Add custom CSS classes here
  *
@@ -3542,7 +3547,7 @@ tbody.collapse.in {
   background-color: #ffffff;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  bordr-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;

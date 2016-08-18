@@ -1,4 +1,29 @@
-<primary-banner [title]="homeData.main.title" [description]="homeData.main.description" [imageUrl]="homeData.main.logoUrl"></primary-banner>
+<div class="cover cover-desktop hidden-xs hidden-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <img src="app/img/logo/resurgens-main.png" class="img-responsive center-block cover-hide animate" height="200px" width="200px">
+        <h1 class="cover-hide animate">{{homeData.main.title}}</h1>
+        <h3 class="cover-hide animate">{{homeData.main.description}}</h3>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cover-mobile cover hidden-md hidden-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <img src="app/img/logo/resurgens-main.png" class="img-responsive center-block" height="200px" width="200px">
+        <h1 class="">{{homeData.main.title}}</h1>
+        <h3 class="">{{homeData.main.description}}</h3>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
 <tertiary-banner [title]="homeData.sprawl.title" [description]="homeData.sprawl.description" [text]="homeData.sprawl.text">
 </tertiary-banner>
 <secondary-banner [title]="homeData.low_water.title" [description]="homeData.low_water.description" [text]="homeData.low_water.text">

@@ -6,6 +6,7 @@ import { SponsorsComponent } from './components/sponsors.component';
 import { SupportComponent } from './components/support.component';
 import { PressComponent } from './components/press.component';
 import { PressReleaseComponent } from './components/press-release.component';
+import { TeamComponent } from './components/team.component';
 
 const routes: RouterConfig = [
   {
@@ -40,6 +41,10 @@ const routes: RouterConfig = [
   {
     path: 'press_release/:id',
     component: PressReleaseComponent
+  },
+  {
+    path: 'team',
+    component: TeamComponent
   }
 ];
 
