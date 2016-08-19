@@ -1,12 +1,12 @@
 <div class="banner-tertiary">
-  <div class="container-fluid">
+  <div class="container-fluid clickable" (click)="toggleShow()">
     <div class="row">
       <div class="col-md-12 text-center">
         <h1>{{title}}</h1>
         <h3>{{description}}</h3>
         <!-- <a class="btn btn-link" [hidden]="show_text" (click)="toggleShow()">Learn more</a> -->
-        <a class="btn btn-link" *ngIf="!show_text" (click)="toggleShow()">Read more</a>
-        <a class="btn btn-link" *ngIf="show_text" (click)="toggleShow()">Read less</a>
+        <!-- <a class="btn btn-link" *ngIf="!show_text" (click)="toggleShow()">Read more</a> -->
+        <!-- <a class="btn btn-link" *ngIf="show_text" (click)="toggleShow()">Read less</a> -->
         <!-- <a href="javascript:;" *ngIf="!show_text" (click)="toggleShow()"><i class="fa fa-2x fa-fw fa-arrow-circle-down icon-pad"></i></a> -->
       </div>
     </div>

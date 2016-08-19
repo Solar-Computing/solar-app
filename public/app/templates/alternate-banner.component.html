@@ -1,13 +1,27 @@
 <div class="banner-alternate">
-  <div class="container-fluid">
+  <div class="container-fluid clickable" *ngIf="text" (click)="toggleShow()">
     <div class="row">
       <div class="col-md-12 text-center">
         <h1>{{title}}</h1>
         <h3>{{description}}</h3>
-        <div *ngIf="text">
+        <!-- <div *ngIf="text">
           <a class="btn btn-link" *ngIf="!show_text" (click)="toggleShow()">Read more</a>
           <a class="btn btn-link" *ngIf="show_text" (click)="toggleShow()">Read less</a>
-        </div>
+        </div> -->
+        <!-- <a class="btn btn-link" [hidden]="show_text" (click)="toggleShow()">Learn more</a> -->
+        <!-- <a href="javascript:;" *ngIf="!show_text" (click)="toggleShow()"><i class="fa fa-2x fa-fw fa-arrow-circle-down icon-pad"></i></a> -->
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" *ngIf="!text">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>{{title}}</h1>
+        <h3>{{description}}</h3>
+        <!-- <div *ngIf="text">
+          <a class="btn btn-link" *ngIf="!show_text" (click)="toggleShow()">Read more</a>
+          <a class="btn btn-link" *ngIf="show_text" (click)="toggleShow()">Read less</a>
+        </div> -->
         <!-- <a class="btn btn-link" [hidden]="show_text" (click)="toggleShow()">Learn more</a> -->
         <!-- <a href="javascript:;" *ngIf="!show_text" (click)="toggleShow()"><i class="fa fa-2x fa-fw fa-arrow-circle-down icon-pad"></i></a> -->
       </div>
