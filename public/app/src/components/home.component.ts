@@ -1,4 +1,9 @@
+/// <reference path="../../../../typings/index.d.ts" />
+
 import { Component } from '@angular/core';
+
+// import { PageScroll } from 'ng2-page-scroll';
+// import { SimplePageScroll } from 'ng2-simple-page-scroll';
 
 import { HomeData } from '../data/home.data';
 import { PrimaryBannerComponent } from './primary-banner.component';
@@ -24,4 +29,13 @@ import { ImageBannerComponent } from './image-banner.component';
 
 export class HomeComponent {
   constructor(private homeData: HomeData) { }
+
+  scrollToContent() {
+    let content = $(".top");
+    let navbar = $(".navbar");
+    console.log(navbar);
+    $('html, body').animate({
+      scrollTop: content.offset().top - navbar.height()
+    }, 1100);
+  }
 }

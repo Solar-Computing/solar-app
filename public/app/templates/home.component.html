@@ -1,4 +1,4 @@
-<div class="cover cover-desktop hidden-xs hidden-sm">
+<div class="cover cover-desktop hidden-xs hidden-sm" (click)="scrollToContent()">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -12,7 +12,7 @@
     </div>
   </div>
 </div>
-<div class="cover-mobile cover hidden-md hidden-lg">
+<div class="cover-mobile cover hidden-md hidden-lg" (click)="scrollToContent()">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -25,6 +25,9 @@
       </div>
     </div>
   </div>
+</div>
+<div class="top">
+
 </div>
 <tertiary-banner [title]="homeData.sprawl.title" [description]="homeData.sprawl.description" [text]="homeData.sprawl.text">
 </tertiary-banner>
