@@ -33,7 +33,6 @@ export class HomeComponent {
   scrollToContent() {
     let content = $(".top");
     let navbar = $(".navbar");
-    console.log(navbar);
     $('html, body').animate({
       scrollTop: content.offset().top - navbar.height()
     }, 1100);
