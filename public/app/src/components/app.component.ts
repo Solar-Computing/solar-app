@@ -30,6 +30,6 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    console.log(this.route.snapshot);
+    // console.log(this.route.snapshot);
   }
 }

@@ -9,12 +9,16 @@
   // background-position: center center;
   background-image : url("app/img/patterns/transparent-square-tiles.png");
   background-repeat: repeat;
-  padding          : @padding-large-vertical*6 @padding-large-horizontal;
+  padding-top      : @padding-large-vertical*5;
+  padding-bottom   : @padding-large-vertical*6;
 }
 
 .clickable {
+  opacity: 0.6;
+
   &:hover {
-    cursor: pointer;
+    opacity: 1;
+    cursor : pointer;
   }
 }
 
