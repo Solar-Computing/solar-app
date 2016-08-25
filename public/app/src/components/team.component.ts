@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 import { ImageBannerComponent } from './image-banner.component';
 
@@ -9,4 +9,16 @@ import { ImageBannerComponent } from './image-banner.component';
   directives: [ImageBannerComponent]
 })
 
-export class TeamComponent { }
+export class TeamComponent implements AfterViewInit {
+  ngAfterViewInit() {
+    this.scrollToTop();
+  }
+
+  scrollToTop() {
+    let content = $(".top");
+    let navbar = $(".navbar");
+    $('html, body').animate({
+      scrollTop: content.offset().top - navbar.height()
+    }, 500);
+  }
+}

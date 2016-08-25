@@ -1,4 +1,4 @@
-<div class="cover cover-desktop hidden-xs hidden-sm" (click)="scrollToContent()">
+<div class="cover cover-desktop hidden-xs hidden-sm top" (click)="scrollToContent()">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -26,9 +26,6 @@
     </div>
   </div>
 </div>
-<div class="top">
-
-</div>
 <tertiary-banner [title]="homeData.sprawl.title" [description]="homeData.sprawl.description" [text]="homeData.sprawl.text">
 </tertiary-banner>
 <secondary-banner [title]="homeData.low_water.title" [description]="homeData.low_water.description" [text]="homeData.low_water.text">
@@ -37,6 +34,7 @@
 </tertiary-banner>
 <secondary-banner [title]="homeData.water_war.title" [description]="homeData.water_war.description" [text]="homeData.water_war.text">
 </secondary-banner>
+<div class="content"></div>
 <image-banner [imageUrl]="'app/img/house/rendering.jpg'" [tint]="false"></image-banner>
 <alternate-banner [title]="homeData.soln.title" [description]="homeData.soln.description" [manifesto]="homeData.soln.manifesto" [text]="homeData.soln.text">
 </alternate-banner>

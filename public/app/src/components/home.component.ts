@@ -1,6 +1,6 @@
 /// <reference path="../../../../typings/index.d.ts" />
 
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 // import { PageScroll } from 'ng2-page-scroll';
 // import { SimplePageScroll } from 'ng2-simple-page-scroll';
@@ -27,14 +27,26 @@ import { ImageBannerComponent } from './image-banner.component';
   ]
 })
 
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
   constructor(private homeData: HomeData) { }
 
   scrollToContent() {
+    let content = $(".content");
+    let navbar = $(".navbar");
+    $('html, body').animate({
+      scrollTop: content.offset().top - navbar.height()
+    }, 1000);
+  }
+
+  ngAfterViewInit() {
+    this.scrollToTop();
+  }
+
+  scrollToTop() {
     let content = $(".top");
     let navbar = $(".navbar");
     $('html, body').animate({
       scrollTop: content.offset().top - navbar.height()
-    }, 1100);
+    }, 500);
   }
 }

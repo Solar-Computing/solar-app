@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { PrimaryBannerComponent } from './primary-banner.component';
@@ -17,7 +17,7 @@ import { PressReleasesData } from '../data/press-releases.data';
   providers: [PressReleasesData]
 })
 
-export class PressComponent implements OnInit {
+export class PressComponent implements OnInit, AfterViewInit {
   private title = "Press";
   private description = "Read more about the wonderful people who support us."
   private releases: PressRelease[];
@@ -35,5 +35,17 @@ export class PressComponent implements OnInit {
 
   goToPressRelease(id: number) {
     this.router.navigateByUrl(`press_release/${id}`);
+  }
+
+  ngAfterViewInit() {
+    this.scrollToTop();
+  }
+
+  scrollToTop() {
+    let content = $(".top");
+    let navbar = $(".navbar");
+    $('html, body').animate({
+      scrollTop: content.offset().top - navbar.height()
+    }, 500);
   }
 }

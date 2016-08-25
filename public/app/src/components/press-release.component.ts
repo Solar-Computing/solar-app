@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { PressReleasesData } from '../data/press-releases.data';
@@ -11,7 +11,7 @@ import { PressRelease } from '../models/press-release';
   providers: [PressReleasesData]
 })
 
-export class PressReleaseComponent implements OnInit, OnDestroy {
+export class PressReleaseComponent implements OnInit, OnDestroy, AfterViewInit {
   release: PressRelease;
   sub: any;
 
@@ -33,5 +33,17 @@ export class PressReleaseComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.sub.unsubscribe();
+  }
+
+  ngAfterViewInit() {
+    this.scrollToTop();
+  }
+
+  scrollToTop() {
+    let content = $(".top");
+    let navbar = $(".navbar");
+    $('html, body').animate({
+      scrollTop: content.offset().top - navbar.height()
+    }, 500);
   }
 }
