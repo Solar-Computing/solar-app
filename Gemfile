@@ -29,7 +29,7 @@ gem 'devise_token_auth'
 gem 'omniauth', '~> 1.3.1'
 
 # Gem to query Genabilty and get rates
-gem 'genability'
+# gem 'genability'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
