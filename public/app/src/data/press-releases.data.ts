@@ -4,20 +4,42 @@ export class PressReleasesData {
   releases: PressRelease[] = [];
 
   constructor() {
-    this.releases.push(new PressRelease(
-      1,
-      'app/img/press-releases/coca-cola.jpeg',
-      'app/img/press-releases/coca-cola-thumbnail.jpeg',
-      'Coca-Cola sponsors Solar Decathlon at Georgia Tech',
-      'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.',
-      `
-Atlanta, Georgia has always been a an enduring city that has survived through hardships that what would have severely hindered others. By luck or destiny, Atlanta is still here today and continues to thrive. Atlanta is known as a city in the forest with a tree canopy more dense than most US cities. Rem Koolhaus says, “Atlanta is a landscape and not a city.”
-
-This statement alludes to Atlanta’s nearly unregulated sprawl into the current 10 county metropolitan region that lacks high-density, urban form that a typical city of its size would.
-
-Metro Atlanta is home to over 6 million people and had a growth rate of 1.27% in 2015 according to Forbes Inc. By 2040, the Atlanta Regional Commission (ARC) expects the Atlanta metro area to reach 8 million.`,
-      new Date(2016, 8, 20)
-    ));
+    this.releases.push(
+      new PressRelease(
+        1,
+        'https://sustain.gatech.edu/blog/solar-home-georgia-tech',
+        'app/img/press-releases/coca-cola.jpeg',
+        'app/img/press-releases/coca-cola-thumbnail.jpeg',
+        'Georgia Tech Campus Sustainability',
+        'Goergia Tech Solar Home features on the Campus Sustainability Blog.',
+        `By luck or destiny, Atlanta is still here today and continues to thrive. Atlanta is known as a city in the forest with a tree canopy more dense than most US cities. Rem Koolhaus says, “Atlanta is a landscape and not a city."`,
+        new Date(2016, 8, 20)
+      )
+    );
+    this.releases.push(
+      new PressRelease(
+        1,
+        'http://www.news.gatech.edu/2016/08/30/students-building-solar-home',
+        'app/img/press-releases/coca-cola.jpeg',
+        'app/img/press-releases/coca-cola-thumbnail.jpeg',
+        'Georgia Tech News',
+        'Georgia Tech News Center writes about Solar Home.',
+        `By luck or destiny, Atlanta is still here today and continues to thrive. Atlanta is known as a city in the forest with a tree canopy more dense than most US cities. Rem Koolhaus says, “Atlanta is a landscape and not a city."`,
+        new Date(2016, 8, 20)
+      )
+    );
+    this.releases.push(
+      new PressRelease(
+        1,
+        'http://nique.net/news/2016/02/05/tech-chosen-to-participate-in-solar-decathalon/',
+        'app/img/press-releases/coca-cola.jpeg',
+        'app/img/press-releases/coca-cola-thumbnail.jpeg',
+        'Technique',
+        'Technique writes about Georgia Tech and Solar Decathalon',
+        `By luck or destiny, Atlanta is still here today and continues to thrive. Atlanta is known as a city in the forest with a tree canopy more dense than most US cities. Rem Koolhaus says, “Atlanta is a landscape and not a city."`,
+        new Date(2016, 8, 20)
+      )
+    );
   }
 
   public getPressRelease(id: number) {

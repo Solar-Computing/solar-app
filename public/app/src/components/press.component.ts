@@ -41,6 +41,10 @@ export class PressComponent implements OnInit, AfterViewInit {
     this.scrollToTop();
   }
 
+  goToLink(link: String) {
+    window.location.href = link.toString();
+  }
+
   scrollToTop() {
     let content = $(".top");
     let navbar = $(".navbar");
