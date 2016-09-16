@@ -42,7 +42,8 @@ export class PressComponent implements OnInit, AfterViewInit {
   }
 
   goToLink(link: String) {
-    window.location.href = link.toString();
+    // window.location.href = link.toString();
+    window.open(link.toString(), '_blank')
   }
 
   scrollToTop() {
