@@ -6,7 +6,7 @@ namespace :simulation do
 
     CSV.foreach('homerresults.csv', headers:true) do |row|
       s = Simulation.new
-      s.endDate = DateTime.strptime(row['End Time'], '%m/%d/%y %H:%M')
+      s.endDateTime = DateTime.strptime(row['End Time'], '%m/%d/%y %H:%M')
       s.globalSolar = row['Global Solar'].to_f
       s.PVSolarAltitude = row['PV Solar Altitude'].to_f
       s.PVSolarAzimuth = row['PV Solar Azimuth'].to_f
