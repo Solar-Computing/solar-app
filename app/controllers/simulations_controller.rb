@@ -10,6 +10,6 @@ class SimulationsController < ApplicationController
     date = params[:date]
     totalLoad = Simulation.where("date(\"endDateTime\") = '#{date}'").sum(:totalElectricalLoadServed)
 
-    render :json => { simulation: totalLoad}
+    render :json => { daily_load: totalLoad}
   end
 end
