@@ -5,4 +5,11 @@ class SimulationsController < ApplicationController
 
     render :json => { simulation: obj }
   end
+
+  def get_daily_load
+    date = params[:date]
+    totalLoad = Simulation.where("date(\"endDateTime\") = '#{date}'").sum(:totalElectricalLoadServed)
+
+    render :json => { simulation: totalLoad}
+  end
 end
