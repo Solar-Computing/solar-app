@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   # devise_for :users
 
   get "api" => 'apis#say_hello'
-  get "simulation" => "simulations#get_simulation"
-  get "simulation/daily" => "simulations#get_daily_load"
+  get "api/simulation" => "simulations#get_simulation"
+  get "api/simulation/daily" => "simulations#get_daily_load"
 end
