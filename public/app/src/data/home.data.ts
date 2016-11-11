@@ -73,28 +73,14 @@ Being part of the watershed and a consumer of water resources, the Solar Decathl
     this.pv_system.title = "Net-Zero Energy"
     this.pv_system.description = "Harvesting solar power to create an overall net-zero system."
     this.pv_system.text = `
-The Tri-state water wars officially began when the Alabama & Florida filed a suits with the Army Corps of Engineers in 1990 for equal water apportionment from the ACF (Alabama, Coosa, Tallapoosa) & ACT (Apalachicola, Chattahoochee, Flint) river basins.
+To achieve Net Zero energy throughout the home, home design along with DC nanogrid technology and PV arrays are strategically implemented. The efficient home design makes it so that less energy is used to heat and cool the home, than that of the standard home. 
 
-In the late 1980s, two of region’s biggest users of the river, a nuclear power plant & a paper mill, both suffered from poor flow on the river in Alabama. The sediment quality and water flow needed for Apalachicola Bay oysters to thrive was also beginning to fail to keep this $80 million dollar industry afloat during the same time. The thirsty Atlanta metro area with its combined sewer and storm water system significantly reduced its flow and was contaminated with toxins & bacteria.
-
-This struggle continued through the 1990s with futile negotiations and state leaders threatening military action for access to water resources. A regional drought worsened relations and threatened water rationing.
-
-The 2000s were filled with federal court trials and rulings to shut-down Atlanta’s draw from Lake Lanier without a viable plan to reprimand the region for uncontrolled growth over the past 30 years. This forced the Atlanta metro area to seek water conservation strategies as opposed to fighting for more water. This ideology has bought more time in this ongoing conflict.
-
-In 2015, the Army Corps of Engineers released a Master Water Control Manual and Environmental Impact Statement for the ACF River basin to outline how it plans to supply water to metro Atlanta from Lake Lanier with a final version due in 2017.`;
+The home includes a large PV array that will power the home by day and a large charged battery that will power the house by night. With this PV array and battery setup, the home will rarely need to purchase energy from the grid. Occasionally, the homeowners will need to buy energy from the grid, and to supplement this cost, the homeowner can sell energy back to the grid. This will ultimately achieve the goal of Net Zero Energy cost on a yearly basis`;
 
     this.water_system.title = "Net-Zero Water"
     this.water_system.description = "Using various technologies to make a near net-zero water system."
     this.water_system.text = `
-The Tri-state water wars officially began when the Alabama & Florida filed a suits with the Army Corps of Engineers in 1990 for equal water apportionment from the ACF (Alabama, Coosa, Tallapoosa) & ACT (Apalachicola, Chattahoochee, Flint) river basins.
-
-In the late 1980s, two of region’s biggest users of the river, a nuclear power plant & a paper mill, both suffered from poor flow on the river in Alabama. The sediment quality and water flow needed for Apalachicola Bay oysters to thrive was also beginning to fail to keep this $80 million dollar industry afloat during the same time. The thirsty Atlanta metro area with its combined sewer and storm water system significantly reduced its flow and was contaminated with toxins & bacteria.
-
-This struggle continued through the 1990s with futile negotiations and state leaders threatening military action for access to water resources. A regional drought worsened relations and threatened water rationing.
-
-The 2000s were filled with federal court trials and rulings to shut-down Atlanta’s draw from Lake Lanier without a viable plan to reprimand the region for uncontrolled growth over the past 30 years. This forced the Atlanta metro area to seek water conservation strategies as opposed to fighting for more water. This ideology has bought more time in this ongoing conflict.
-
-In 2015, the Army Corps of Engineers released a Master Water Control Manual and Environmental Impact Statement for the ACF River basin to outline how it plans to supply water to metro Atlanta from Lake Lanier with a final version due in 2017.`;
+Water filtration is the key process for net zero water throughout the home.  Rainwater and grey water (showers, sinks, washer) is collected and filtered firstly through a reverse osmosis filter and secondly through an ultraviolet filter for potable uses in the house. Black water (flush from toilets is treated and used for vegetation.`;
 
     this.efficient.title = "Highly Efficient"
     this.efficient.description = "Maximising energy production and minimising energy consumption."
